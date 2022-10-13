@@ -1,6 +1,6 @@
 <template>
   <main>
-    INDEX
+    <img src="../assets/img/logo.png">
   </main>
 </template>
 
