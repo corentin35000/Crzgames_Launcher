@@ -59,7 +59,9 @@
         "height": 720,
         "resizable": true,
         "title": "Sea Tyrants",
-        "width": 1200
+        "width": 1200,
+        "minWidth": 1000,
+        "minHeight": 640
       }
     ]
   }

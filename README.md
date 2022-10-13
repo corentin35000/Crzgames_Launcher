@@ -45,11 +45,16 @@ yarn upgrade @tauri-apps/cli @tauri-apps/api --latest
 ```
 
 ## Development Server
-
 Start the development server on http://127.0.0.1:1420/
 
+Server type : Desktop (.exe)
 ```bash
 yarn tauri dev
+```
+
+Server type : WebApp
+```bash
+yarn run dev
 ```
 
 ## Production
