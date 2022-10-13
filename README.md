@@ -38,13 +38,7 @@ npm install --global yarn
 yarn install
 ```
 
-## Updating Dependencies Vue
-
-```bash
-yarn upgrade
-```
-
-## Updating Dependencies Tauri
+## Updating Dependencies
 
 ```bash
 yarn upgrade @tauri-apps/cli @tauri-apps/api --latest
@@ -55,7 +49,7 @@ yarn upgrade @tauri-apps/cli @tauri-apps/api --latest
 Start the development server on http://127.0.0.1:1420/
 
 ```bash
-yarn dev
+yarn tauri dev
 ```
 
 ## Production
@@ -67,3 +61,11 @@ yarn tauri build
 ```
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
+
+## Infos
+
+It shows a concise list of information about the envifronment, Rust, Node.js and their versions as well as some relevant configurations.
+
+```bash
+yarn tauri info
+```
