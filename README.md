@@ -53,11 +53,25 @@ yarn tauri dev
 ```
 
 ## Production
- 
-Build the application for production :
 
+64-bit MSVC (Windows 7+) :
 ```bash
-yarn tauri build
+yarn tauri build --target x86_64-pc-windows-msvc
+```
+
+32-bit MSVC (Windows 7+) :
+```bash
+yarn tauri build --target i686-pc-windows-msvc
+```
+
+64-bit Linux (kernel 3.2+, glibc 2.17+) :
+```bash
+yarn tauri build --target x86_64-unknown-linux-gnu
+```
+
+32-bit Linux (kernel 3.2+, glibc 2.17+) :
+```bash
+yarn tauri build --target i686-unknown-linux-gnu	
 ```
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
