@@ -1,14 +1,14 @@
 {
   "build": {
-    "beforeDevCommand": "yarn dev",
-    "beforeBuildCommand": "yarn build",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
     "devPath": "http://localhost:1420",
     "distDir": "../dist",
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "seatyrants-launcher",
-    "version": "0.1.0"
+    "productName": "seatyrants",
+    "version": "0.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -17,17 +17,14 @@
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
-      "copyright": "Sea Tyrants 2022",
+      "copyright": "",
       "deb": {
         "depends": []
       },
       "externalBin": [],
       "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
+        "icons/app-icon.png",
+        "icons/app-icon.ico"
       ],
       "identifier": "com.seatyrants",
       "longDescription": "",
@@ -40,7 +37,7 @@
       },
       "resources": [],
       "shortDescription": "",
-      "targets": "msi",
+      "targets": ["deb", "msi"],
       "windows": {
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
@@ -57,13 +54,11 @@
       {
         "fullscreen": false,
         "height": 611,
-        "resizable": true,
-        "title": "Sea Tyrants",
         "width": 365,
-        "minWidth": 365,
-        "minHeight": 611,
-        "center": true,
-        "alwaysOnTop": true
+        "resizable": false,
+        "title": "Sea Tyrants",
+        "transparent": true,
+        "decorations": false
       }
     ]
   }

@@ -27,21 +27,15 @@ npm install -g npm
 ```
 
 ```bash
-# npm
-# Install yarn
-npm install --global yarn
-```
-
-```bash
 # yarn
 # Install packages to project
-yarn install
+npm install
 ```
 
 ## Updating Dependencies
 
 ```bash
-yarn upgrade @tauri-apps/cli @tauri-apps/api --latest
+npm install @tauri-apps/cli@latest @tauri-apps/api@latest
 ```
 
 ## Development Server
@@ -49,34 +43,34 @@ Start the development server on http://127.0.0.1:1420/
 
 Server type : Desktop (.exe)
 ```bash
-yarn tauri dev
+npm run tauri dev
 ```
 
 Server type : WebApp
 ```bash
-yarn run dev
+npm run dev
 ```
 
 ## Production
 
 64-bit MSVC (Windows 7+) :
 ```bash
-yarn tauri build --target x86_64-pc-windows-msvc
+npm run tauri build --target x86_64-pc-windows-msvc
 ```
 
 32-bit MSVC (Windows 7+) :
 ```bash
-yarn tauri build --target i686-pc-windows-msvc
+npm run tauri build --target i686-pc-windows-msvc
 ```
 
 64-bit Linux (kernel 3.2+, glibc 2.17+) :
 ```bash
-yarn tauri build --target x86_64-unknown-linux-gnu
+npm run tauri build --target x86_64-unknown-linux-gnu
 ```
 
 32-bit Linux (kernel 3.2+, glibc 2.17+) :
 ```bash
-yarn tauri build --target i686-unknown-linux-gnu	
+npm run tauri build --target i686-unknown-linux-gnu	
 ```
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
@@ -86,5 +80,5 @@ Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) f
 It shows a concise list of information about the envifronment, Rust, Node.js and their versions as well as some relevant configurations.
 
 ```bash
-yarn tauri info
+npm run tauri info
 ```
