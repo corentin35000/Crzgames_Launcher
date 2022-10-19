@@ -3,7 +3,7 @@
 
   <Header />
 
-  <router-view></router-view>
+  <RouterView />
 
   <Footer />
 </template>
