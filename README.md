@@ -34,9 +34,16 @@ npm install
 
 ## Updating Dependencies
 
+Vous pouvez mettre à jour les dépendances NPM avec (à la racine du projet) :
 ```bash
 npm install @tauri-apps/cli@latest @tauri-apps/api@latest
 ```
+
+Pour mettre à jour les dépendances Cargo, exécutez ce qui suit dans le dossier 'src-tauri' :
+```bash
+cargo update
+```
+
 
 ## Development Server
 Start the development server on http://127.0.0.1:1420/
