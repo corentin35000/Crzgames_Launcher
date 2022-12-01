@@ -11,30 +11,28 @@
 " alt="" width="220" height="auto" style="margin-left: -20px" />
 </a>
 
-## Prerequisites
+## Prerequisites for Tauri
 1. Install Microsoft Visual Studio 2022 C++ Build Tools
 2. Install WebView2 : https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
 3. Install Rust : https://www.rust-lang.org/tools/install
 
-## Setup
-
-Make sure to install the dependencies:
+## Prerequisites for Vue.js
 
 ```bash
 # npm
-# Install Node.js and npm for Vue.js
+# Install Node.js and npm
 npm install -g npm
 ```
 
-```bash
-#npm
-# Install packages to project
-npm install
-```
 
 ## Updating Dependencies
 
-Vous pouvez mettre à jour les dépendances NPM (à la racine du projet) :
+Vous pouvez mettre à jour les dépendances NPM de Vue.js (à la racine du projet) :
+```bash
+npm install
+```
+
+Vous pouvez mettre à jour les dépendances NPM de tauri (à la racine du projet) :
 ```bash
 npm install @tauri-apps/cli@latest @tauri-apps/api@latest
 ```
