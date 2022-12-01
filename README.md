@@ -27,14 +27,14 @@ npm install -g npm
 ```
 
 ```bash
-# yarn
+#npm
 # Install packages to project
 npm install
 ```
 
 ## Updating Dependencies
 
-Vous pouvez mettre à jour les dépendances NPM avec (à la racine du projet) :
+Vous pouvez mettre à jour les dépendances NPM (à la racine du projet) :
 ```bash
 npm install @tauri-apps/cli@latest @tauri-apps/api@latest
 ```
@@ -82,9 +82,9 @@ npm run tauri build --target i686-unknown-linux-gnu
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
 
-## Infos
+## Infos dependances / environment
 
-It shows a concise list of information about the envifronment, Rust, Node.js and their versions as well as some relevant configurations.
+It shows a concise list of information about the environment, Rust, Node.js and their versions as well as some relevant configurations.
 
 ```bash
 npm run tauri info
