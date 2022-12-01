@@ -1,4 +1,4 @@
-# SeaTyrants - Launcher
+# Crzgames - Launcher
 
 ## Tech
 
