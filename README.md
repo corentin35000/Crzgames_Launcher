@@ -11,12 +11,12 @@
 " alt="" width="220" height="auto" style="margin-left: -20px" />
 </a>
 
-## Prerequisites for Tauri
+## Setup for Tauri
 1. Install Microsoft Visual Studio 2022 C++ Build Tools
 2. Install WebView2 : https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
 3. Install Rust : https://www.rust-lang.org/tools/install
 
-## Prerequisites for Vue.js
+## Setup for Vue.js
 
 ```bash
 # npm
