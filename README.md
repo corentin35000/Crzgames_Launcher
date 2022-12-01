@@ -58,12 +58,12 @@ npm run dev
 
 ## Production
 
-64-bit MSVC (Windows 7+) :
+64-bit Windows (Windows 7+) :
 ```bash
 npm run tauri build --target x86_64-pc-windows-msvc
 ```
 
-32-bit MSVC (Windows 7+) :
+32-bit Windows (Windows 7+) :
 ```bash
 npm run tauri build --target i686-pc-windows-msvc
 ```
@@ -86,7 +86,7 @@ tauri build --target universal-apple-darwin
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
 
-## Infos dependances / environment
+## Infos for dependances / environment
 
 It shows a concise list of information about the environment, Rust, Node.js and their versions as well as some relevant configurations.
 
