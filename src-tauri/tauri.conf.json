@@ -37,7 +37,7 @@
       },
       "resources": [],
       "shortDescription": "",
-      "targets": ["all"],
+      "targets": "all",
       "windows": {
         "webviewInstallMode": {
           "type": "offlineInstaller"

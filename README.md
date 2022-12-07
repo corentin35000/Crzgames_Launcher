@@ -71,7 +71,8 @@ Exemple pour Windows 32 bits :
 ```bash
 rustup target add i686-pc-windows-msvc
 ``` 
-<br />
+Target disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.html
+<br /><br />
 
 ### Build - Windows :
 Informations : Windows 10/11 sont compatible nativement, mais en-dessous de Windows 10 il n'y as pas WebView2 installer par défault. <br />
@@ -122,6 +123,8 @@ npm run tauri build --target universal-apple-darwin
 ```
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
+
+<br />
 
 ## Infos for dependances / environment
 
