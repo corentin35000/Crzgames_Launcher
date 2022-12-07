@@ -24,6 +24,12 @@
 npm install -g npm
 ```
 
+```bash
+# npm
+# Install dependances
+npm install
+```
+
 
 ## Updating Dependencies
 
@@ -58,15 +64,25 @@ npm run dev
 
 ## Production
 
-### Install :
-Par défaut, Rust installe uniquement les chaînes d'outils pour la cible de votre machine, <br />
-vous devez donc d'abord installer la chaîne d'outils pour le system souhaiter. <br />
+### Install for production - Windows / macOS / Linux :
+Par défaut, Rust installe uniquement les chaînes d'outils pour la cible de votre machine. <br />
+Vous devez donc d'abord installer la chaîne d'outils pour le system souhaiter. <br /><br />
 Exemple pour Windows 32 bits :
 ```bash
 rustup target add i686-pc-windows-msvc
-```
+``` 
+<br />
 
-### Build :
+### Build - Windows 7+ :
+Informations : Windows 10/11 sont compatible nativement, mais en-dessous de Windows 10 il n'y as pas WebView2 installer par défault. <br />
+Il faudra le packager dans l'installeur .msi pour que ce sois compatible à partir de Windows7 et +.
+
+Dossier src-tauri : <br />
+
+![img_2.png](img_2.png)
+
+Dossier racine : <br /> 
+![img_4.png](img_4.png)
 
 64-bit Windows (Windows 7+) :
 ```bash
