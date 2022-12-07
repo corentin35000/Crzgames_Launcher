@@ -79,10 +79,10 @@ Il faudra le packager dans l'installeur .msi pour que ce sois compatible à part
 
 Dossier src-tauri : <br />
 
-![img_2.png](img_2.png)
+![img_2.png](imgReadme/img_2.png)
 
 Dossier racine : <br /> 
-![img_4.png](img_4.png)
+![img_4.png](imgReadme/img_4.png)
 
 64-bit Windows (Windows 7+) :
 ```bash
