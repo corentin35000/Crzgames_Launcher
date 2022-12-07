@@ -1,4 +1,4 @@
-# SeaTyrants - Launcher
+# Crzgames - Launcher
 
 ## Tech
 
@@ -91,7 +91,7 @@ npm run tauri build --target i686-unknown-linux-gnu
 macOS (macOS 10.3+) :
 produit un binaire macOS universel qui s'exécute à la fois sur le silicium Apple et sur les Mac à processeur Intel.
 ```bash
-tauri build --target universal-apple-darwin
+npm run tauri build --target universal-apple-darwin
 ```
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
