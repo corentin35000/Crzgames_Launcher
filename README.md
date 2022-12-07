@@ -73,7 +73,7 @@ rustup target add i686-pc-windows-msvc
 ``` 
 <br />
 
-### Build - Windows 7+ :
+### Build - Windows :
 Informations : Windows 10/11 sont compatible nativement, mais en-dessous de Windows 10 il n'y as pas WebView2 installer par défault. <br />
 Il faudra le packager dans l'installeur .msi pour que ce sois compatible à partir de Windows7 et +.
 
@@ -94,6 +94,14 @@ npm run tauri build --target x86_64-pc-windows-msvc
 npm run tauri build --target i686-pc-windows-msvc
 ```
 
+Le .msi qui sera générer pour Windows7+ 32-bit/64-bit après avoir compiler ce trouve dans : <br />
+```bash
+project\src-tauri\target\release\bundle\msi\fichier.msi
+```
+<br />
+
+### Build - Linux :
+
 64-bit Linux (kernel 3.2+, glibc 2.17+) :
 ```bash
 npm run tauri build --target x86_64-unknown-linux-gnu
@@ -103,6 +111,9 @@ npm run tauri build --target x86_64-unknown-linux-gnu
 ```bash
 npm run tauri build --target i686-unknown-linux-gnu	
 ```
+<br />
+
+### Build - macOS  :
 
 macOS (macOS 10.3+) :
 produit un binaire macOS universel qui s'exécute à la fois sur le silicium Apple et sur les Mac à processeur Intel.

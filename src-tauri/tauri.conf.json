@@ -37,7 +37,7 @@
       },
       "resources": [],
       "shortDescription": "",
-      "targets": ["deb", "msi"],
+      "targets": ["all"],
       "windows": {
         "webviewInstallMode": {
           "type": "offlineInstaller"
@@ -59,7 +59,7 @@
         "height": 611,
         "width": 365,
         "resizable": false,
-        "title": "Sea Tyrants",
+        "title": "Crz Games Launcher",
         "transparent": true,
         "decorations": false
       }
