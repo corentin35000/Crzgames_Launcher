@@ -11,12 +11,12 @@
 " alt="" width="220" height="auto" style="margin-left: -20px" />
 </a>
 
-## Prerequisites for Tauri
+## Setup for Tauri
 1. Install Microsoft Visual Studio 2022 C++ Build Tools
 2. Install WebView2 : https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
 3. Install Rust : https://www.rust-lang.org/tools/install
 
-## Prerequisites for Vue.js
+## Setup for Vue.js
 
 ```bash
 # npm
@@ -57,6 +57,16 @@ npm run dev
 ```
 
 ## Production
+
+### Install :
+Par défaut, Rust installe uniquement les chaînes d'outils pour la cible de votre machine, <br />
+vous devez donc d'abord installer la chaîne d'outils pour le system souhaiter. <br />
+Exemple pour Windows 32 bits :
+```bash
+rustup target add i686-pc-windows-msvc
+```
+
+### Build :
 
 64-bit Windows (Windows 7+) :
 ```bash
