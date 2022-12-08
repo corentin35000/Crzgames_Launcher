@@ -71,7 +71,7 @@ Exemple pour Windows 32 bits :
 ```bash
 rustup target add i686-pc-windows-msvc
 ``` 
-Target disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.html
+Targets disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.html
 <br /><br />
 
 ### Build - Windows :
@@ -81,8 +81,6 @@ Il faudra le packager dans l'installeur .msi pour que ce sois compatible à part
 Dossier src-tauri : <br />
 
 ![img_2.png](imgReadme/img_2.png)
-
-Dossier racine : <br /> 
 ![img_4.png](imgReadme/img_4.png)
 
 64-bit Windows (Windows 7+) :
