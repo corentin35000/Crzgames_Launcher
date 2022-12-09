@@ -78,7 +78,7 @@ Targets disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.ht
 ```bash
 npm run tauri build
 ```
-<br /><br />
+<br /><br /><br />
 
 ### Build - Windows :
 Informations : Windows 10/11 sont compatible nativement, mais en-dessous de Windows 10 il n'y as pas WebView2 installer par défault. <br />
