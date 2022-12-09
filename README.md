@@ -72,6 +72,12 @@ Exemple pour Windows 32 bits :
 rustup target add i686-pc-windows-msvc
 ``` 
 Targets disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.html
+<br />
+
+### Pour build un système qui est le même que notre machine il faudra utiliser :
+```bash
+npm run tauri build
+```
 <br /><br />
 
 ### Build - Windows :
