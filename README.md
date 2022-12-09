@@ -72,13 +72,13 @@ Exemple pour Windows 32 bits :
 rustup target add i686-pc-windows-msvc
 ``` 
 Targets disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.html
-<br />
+<br /><br />
 
 ### Pour build un système qui est le même que notre machine il faudra utiliser :
 ```bash
 npm run tauri build
 ```
-<br /><br /><br />
+<br /><br />
 
 ### Build - Windows :
 Informations : Windows 10/11 sont compatible nativement, mais en-dessous de Windows 10 il n'y as pas WebView2 installer par défault. <br />
