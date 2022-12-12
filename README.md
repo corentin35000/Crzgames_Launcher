@@ -14,7 +14,7 @@
 
 
 ## Setup Tauri for Windows
-1. Install Microsoft Visual Studio 2022 C++ Build Tools : https://visualstudio.microsoft.com/fr/vs/
+1. Install Microsoft Visual Studio 2022 (C++ Build Tools and ARM C++): https://visualstudio.microsoft.com/fr/vs/
 2. Install WebView2 : https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
 3. Install Rust : https://www.rust-lang.org/tools/install
 
