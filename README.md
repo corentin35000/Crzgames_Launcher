@@ -170,7 +170,7 @@ npm run tauri build -- --target universal-apple-darwin
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
 
-<br />
+<br /><br />
 
 ## Infos for dependances / environment
 
