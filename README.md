@@ -53,6 +53,11 @@ ncu --upgrade
 npm install
 ```
 
+Updating Rust :
+```bash
+rustup update
+```
+
 Updating Dependencies Rust/Tauri, pour mettre à jour les dépendances Cargo, exécutez ce qui suit dans le dossier 'src-tauri' :
 ```bash
 cargo update
