@@ -51,6 +51,7 @@ sudo apt install libwebkit2gtk-4.0-dev \
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 ```
 
+<br />
 
 ## Setup for Vue.js 
 
