@@ -20,12 +20,12 @@
 
 
 ## Setup Tauri for macOS
-1. Dépendances macOS et CLang :
+1. Install macOS et CLang :
 ```bash
 xcode-select --install
 ```
 
-2. Rust :
+2. Install Rust :
 ```bash
 #curl
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
