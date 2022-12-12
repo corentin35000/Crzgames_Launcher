@@ -99,6 +99,8 @@ Targets disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.ht
 npm run tauri build
 ```
 
+### Après avoir build, récupérer les binaires et/ou le programme d'installation pour le système d'exploitation ciblé :
+
 Cette commande intègre vos ressources Web dans un seul binaire avec votre code Rust. <br />
 Le binaire lui-même sera situé dans : <br />
 ```bash
