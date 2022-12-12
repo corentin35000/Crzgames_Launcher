@@ -138,6 +138,20 @@ Targets disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.ht
 
 <br />
 
+### Réduire la taille de l'application :
+Documentation : https://tauri.app/fr/v1/guides/building/app-size#rust-build-time-optimizations <br />
+
+1. Rust Build-Time Optimizations (optimisation lors du build) en ajoutant des données dans le fichier Cargot.toml :
+  ```bash
+    [profile.release]
+    panic = "abort" # Éliminer la logique de nettoyage de panique coûteuse
+    codegen-units = 1 # Compiler les crates l'une après l'autre pour que le compilateur puisse optimiser mieux
+    lto = true # Active les optimisations de link
+    opt-level = "s" # Optimiser la taille du binaire
+    strip = true # Supprimer automatiquement les symboles du binaire.
+  ```
+
+
 ### Pour build un système qui est le même que notre machine il faudra utiliser :
 ```bash
 npm run tauri build
