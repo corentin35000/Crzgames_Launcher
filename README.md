@@ -94,8 +94,14 @@ npm run tauri build
 ```
 
 Cette commande intègre vos ressources Web dans un seul binaire avec votre code Rust. <br />
-Le binaire lui-même sera situé dans src-tauri/target/release/[app name], et les programmes d'installation seront situés dans src-tauri/target/release/bundle/.
-
+Le binaire lui-même sera situé dans : <br />
+```bash
+src-tauri/target/release/[app name]
+```
+Et les programmes d'installation seront situés dans :
+```bash
+src-tauri/target/release/bundle/
+```
 <br /><br />
 
 ### Build - Windows :
