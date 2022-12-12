@@ -10,6 +10,8 @@
   <img src="https://d33wubrfki0l68.cloudfront.net/4112b407ce93d899a0e499bbefa9fc172b11685e/49ffa/meta/tauri_logo_dark.svg
 " alt="" width="220" height="auto" style="margin-left: -20px" />
 </a>
+<br /><br />
+
 
 ## Setup for Tauri
 1. Install Microsoft Visual Studio 2022 C++ Build Tools
