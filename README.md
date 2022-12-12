@@ -77,7 +77,15 @@ Exemple pour Windows 32 bits :
 ```bash
 rustup target add i686-pc-windows-msvc
 ``` 
+
+Lister les targets déjà installer :
+```bash
+rustup target list
+``` 
+
 Targets disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.html
+
+
 <br /><br /><br />
 
 ### Pour build un système qui est le même que notre machine il faudra utiliser :
