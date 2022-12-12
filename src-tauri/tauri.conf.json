@@ -18,9 +18,6 @@
       "active": true,
       "category": "DeveloperTool",
       "copyright": "",
-      "deb": {
-        "depends": []
-      },
       "externalBin": [],
       "icon": [
         "icons/app-icon.png",
@@ -28,13 +25,6 @@
       ],
       "identifier": "com.seatyrants",
       "longDescription": "",
-      "macOS": {
-        "entitlements": null,
-        "exceptionDomain": "",
-        "frameworks": [],
-        "providerShortName": null,
-        "signingIdentity": null
-      },
       "resources": [],
       "shortDescription": "",
       "targets": "all",
@@ -45,6 +35,16 @@
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
         "timestampUrl": ""
+      },
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "deb": {
+        "depends": []
       }
     },
     "security": {
