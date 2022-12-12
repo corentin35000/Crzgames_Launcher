@@ -32,10 +32,15 @@ npm install
 
 
 ## Updating Dependencies
-Install a global package, to update major/minor versions of available packages NPM : 
+Install a global package, to update major/minor versions of available packages npm : 
 ```bash
 # npm
 npm install -g npm-check-updates 
+```
+
+Pour voir mise à jour des packages disponible de npm, exécutez ce qui suit à la racine :
+```bash
+ncu
 ```
 
 Updating Dependencies Vue.js/Tauri, pour mettre à jour les dépendances NPM, exécutez ce qui suit à la racine :
