@@ -25,3 +25,10 @@ default = [ "custom-protocol" ]
 # this feature is used used for production builds where `devPath` points to the filesystem
 # DO NOT remove this
 custom-protocol = [ "tauri/custom-protocol" ]
+
+[profile.release]
+panic = "abort" # Éliminer la logique de nettoyage de panique coûteuse
+codegen-units = 1 # Compiler les crates l'une après l'autre pour que le compilateur puisse optimiser mieux
+lto = true # Active les optimisations de link
+opt-level = "s" # Optimiser la taille du binaire
+strip = true # Supprimer automatiquement les symboles du binaire.
