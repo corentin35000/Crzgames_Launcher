@@ -30,6 +30,8 @@ npm install -g npm
 npm install
 ```
 
+<br /><br />
+
 
 ## Updating Dependencies
 Install a global package, to update major/minor versions of available packages npm : 
@@ -54,6 +56,7 @@ Updating Dependencies Rust/Tauri, pour mettre à jour les dépendances Cargo, ex
 cargo update
 ```
 
+<br /><br />
 
 ## Development Server
 Start the development server on http://127.0.0.1:1420/
@@ -67,6 +70,8 @@ Server type : WebApp
 ```bash
 npm run dev
 ```
+
+<br /><br />
 
 ## Production
 
