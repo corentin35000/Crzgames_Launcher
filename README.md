@@ -43,7 +43,7 @@ Pour voir mise à jour des packages disponible de npm, exécutez ce qui suit à 
 ncu
 ```
 
-Updating Dependencies Vue.js/Tauri, pour mettre à jour les dépendances NPM, exécutez ce qui suit à la racine :
+Updating Dependencies Vue.js/Tauri, pour mettre à jour les dépendances npm, exécutez ce qui suit à la racine :
 ```bash
 ncu --upgrade
 npm install
