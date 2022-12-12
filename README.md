@@ -32,7 +32,7 @@ npm install
 
 
 ## Updating Dependencies
-Install a global package, to update major/minor versions of available packages : 
+Install a global package, to update major/minor versions of available packages NPM : 
 ```bash
 # npm
 npm install -g npm-check-updates 
