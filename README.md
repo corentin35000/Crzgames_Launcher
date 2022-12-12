@@ -203,7 +203,7 @@ npm run tauri build -- --target x86_64-unknown-linux-gnu
 ```
 <br />
 
-### Build - macOS (11.0 minimum pour tous) - .app / .dmg :
+### Build - macOS - .app / .dmg :
 
 <span style="color: red;">IMPORTANT</span> : Veuillez noter que les bundles .app et .dmg ne peuvent être créés que sur macOS car la compilation croisée ne fonctionne pas encore. <br />
 
