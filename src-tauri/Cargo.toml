@@ -1,8 +1,8 @@
 [package]
-name = "Crz Game Launcher"
+name = "seatyrants"
 version = "0.0.0"
-description = "Launcher"
-authors = ["corentin recanzone"]
+description = "A Tauri App"
+authors = ["you"]
 license = ""
 repository = ""
 edition = "2021"
