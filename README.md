@@ -127,6 +127,18 @@ npm run tauri build --target i686-unknown-linux-gnu
 ### Build - macOS  :
 
 macOS (macOS 10.3+) :
+produit un binaire macOS pour les machines Apple en silicium.
+```bash
+tauri build --target aarch64-apple-darwin
+```
+
+macOS (macOS 10.3+) :
+produit un binaire macOS pour les machines Apple basé sur Intel.
+```bash
+tauri build --target x86_64-apple-darwin
+```
+
+macOS (macOS 10.3+) :
 produit un binaire macOS universel qui s'exécute à la fois sur le silicium Apple et sur les Mac à processeur Intel.
 ```bash
 npm run tauri build --target universal-apple-darwin
