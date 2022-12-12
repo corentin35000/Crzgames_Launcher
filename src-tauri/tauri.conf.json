@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "seatyrants",
+    "productName": "Crz Game Launcher",
     "version": "0.0.0"
   },
   "tauri": {
@@ -17,7 +17,7 @@
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
-      "copyright": "",
+      "copyright": "Crzgames",
       "externalBin": [],
       "icon": [
         "icons/app-icon.png",
