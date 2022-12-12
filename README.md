@@ -122,11 +122,6 @@ npm run tauri build -- --target x86_64-pc-windows-msvc
 ```bash
 npm run tauri build -- --target i686-pc-windows-msvc
 ```
-
-Le fichier .msi générer, contient l'installateur de l'application qui ce trouve dans : <br />
-```bash
-project\src-tauri\target\release\bundle\msi\fichier.msi
-```
 <br />
 
 ### Build - Linux :
