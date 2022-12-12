@@ -105,12 +105,12 @@ Dossier src-tauri : <br />
 
 64-bit Windows (Windows 7+) :
 ```bash
-npm run tauri build --target x86_64-pc-windows-msvc
+npm run tauri build -- --target x86_64-pc-windows-msvc
 ```
 
 32-bit Windows (Windows 7+) :
 ```bash
-npm run tauri build --target i686-pc-windows-msvc
+npm run tauri build -- --target i686-pc-windows-msvc
 ```
 
 Le fichier .msi générer, contient l'installateur de l'application qui ce trouve dans : <br />
@@ -123,17 +123,17 @@ project\src-tauri\target\release\bundle\msi\fichier.msi
 
 ARM64 Linux (kernel 4.1, glibc 2.17+) :
 ```bash
-npm run tauri build --target aarch64-unknown-linux-gnu	
+npm run tauri build -- --target aarch64-unknown-linux-gnu	
 ```
 
 32-bit Linux (kernel 3.2+, glibc 2.17+) :
 ```bash
-npm run tauri build --target i686-unknown-linux-gnu	
+npm run tauri build -- --target i686-unknown-linux-gnu	
 ```
 
 64-bit Linux (kernel 3.2+, glibc 2.17+) :
 ```bash
-npm run tauri build --target x86_64-unknown-linux-gnu
+npm run tauri build -- --target x86_64-unknown-linux-gnu
 ```
 <br />
 
@@ -142,19 +142,19 @@ npm run tauri build --target x86_64-unknown-linux-gnu
 ARM64 macOS (11.0+, Big Sur+) :
 produit un binaire macOS pour les machines Apple en silicium.
 ```bash
-tauri build --target aarch64-apple-darwin
+npm run tauri build -- --target aarch64-apple-darwin
 ```
 
 64-bit macOS (10.7+, Lion+) :
 produit un binaire macOS pour les machines Apple basé sur Intel.
 ```bash
-tauri build --target x86_64-apple-darwin
+npm run tauri build -- --target x86_64-apple-darwin
 ```
 
 ARM64/64-bit macOS (11.0+, Big Sur+ / 10.7+, Lion+) :
 produit un binaire macOS universel qui s'exécute à la fois sur le silicium Apple et sur les Mac à processeur Intel.
 ```bash
-npm run tauri build --target universal-apple-darwin
+npm run tauri build -- --target universal-apple-darwin
 ```
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
