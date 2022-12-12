@@ -147,7 +147,9 @@ npm run tauri build -- --target i686-pc-windows-msvc
 <br />
 
 ### Build - Linux - .deb / .appimage :
-<span style="color: red;">IMPORTANT</span> : Veuillez noter que les paquets .deb / .appimage ne peuvent être créés que sur Linux car la compilation croisée ne fonctionne pas encore.
+<span style="color: red;">IMPORTANT</span> : Veuillez noter que les paquets .deb / .appimage ne peuvent être créés que sur Linux car la compilation croisée ne fonctionne pas encore. <br />
+<span style="color: red;">IMPORTANT (2)</span> : Compiler un .appimage pour faciliter les utilisateurs. Une application .appimage est similaire à un fichier .exe sur Windows. <br />
+
 <br /><br />
 
 ARM64 Linux (kernel 4.1, glibc 2.17+) :
