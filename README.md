@@ -138,7 +138,7 @@ produit un binaire macOS pour les machines Apple basé sur Intel.
 tauri build --target x86_64-apple-darwin
 ```
 
-macOS (macOS 10.3+) :
+64-bit macOS (10.7+, Lion+) :
 produit un binaire macOS universel qui s'exécute à la fois sur le silicium Apple et sur les Mac à processeur Intel.
 ```bash
 npm run tauri build --target universal-apple-darwin
