@@ -170,7 +170,7 @@ npm run tauri build -- --target x86_64-unknown-linux-gnu
 
 <span style="color: red;">IMPORTANT</span> : Veuillez noter que les bundles .app et .dmg ne peuvent être créés que sur macOS car la compilation croisée ne fonctionne pas encore. <br />
 
-<span style="color: red;">IMPORTANT (2)</span> : Compiler un .app pour plus de faciliter pour les utilisateurs. Une application .app est similaire à un fichier .exe sur Windows. <br />
+<span style="color: red;">IMPORTANT (2)</span> : Compiler un .app pour faciliter les utilisateurs. Une application .app est similaire à un fichier .exe sur Windows. <br />
 
 <span style="color: red;">IMPORTANT (3)</span> : La version minimale du système d'exploitation nécessaire pour qu'une application Tauri puisse fonctionner sur macOS est 10.13. Si vous avez besoin du support pour les nouvelles API macOS comme window.print qui n'est pris en charge que depuis la version macOS 11. <br />
 
