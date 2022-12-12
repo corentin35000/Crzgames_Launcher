@@ -13,12 +13,46 @@
 <br /><br />
 
 
-## Setup for Tauri
+## Setup Tauri for Windows
 1. Install Microsoft Visual Studio 2022 C++ Build Tools
 2. Install WebView2 : https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
 3. Install Rust : https://www.rust-lang.org/tools/install
 
-## Setup for Vue.js
+
+## Setup Tauri for macOS
+1. Dépendances macOS et CLang :
+```bash
+xcode-select --install
+```
+
+2. Rust :
+```bash
+#curl
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+```
+
+## Setup Tauri for Linux
+1. Dépendances système (Debian) :
+```bash
+sudo apt update
+sudo apt install libwebkit2gtk-4.0-dev \
+    build-essential \
+    curl \
+    wget \
+    libssl-dev \
+    libgtk-3-dev \
+    libayatana-appindicator3-dev \
+    librsvg2-dev
+```
+
+2. Install Rust : 
+```bash
+#curl
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+```
+
+
+## Setup for Vue.js 
 
 ```bash
 # npm
