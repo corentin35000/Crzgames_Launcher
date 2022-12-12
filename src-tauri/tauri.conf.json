@@ -16,7 +16,7 @@
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
+      "category": "Games",
       "copyright": "DEV-ALL",
       "externalBin": [],
       "icon": [
@@ -41,7 +41,8 @@
         "exceptionDomain": "",
         "frameworks": [],
         "providerShortName": null,
-        "signingIdentity": null
+        "signingIdentity": null,
+        "minimumSystemVersion": 11
       },
       "deb": {
         "depends": []

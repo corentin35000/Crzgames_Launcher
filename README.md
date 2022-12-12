@@ -123,8 +123,11 @@ src-tauri/target/release/bundle/
 ```
 <br />
 
-### Build - Windows :
-Informations : Windows 10/11 sont compatible nativement, mais en-dessous de Windows 10 il n'y as pas WebView2 installer par défault. <br />
+### Build - Windows - .msi :
+<span style="color: red;">IMPORTANT</span> : Veuillez noter que les installateurs de .msi ne peuvent être créés que sous Windows car la compilation croisée ne fonctionne pas encore.
+<br />
+
+<span style="color: red;">IMPORTANT (2)</span> : Windows 10/11 sont compatible nativement, mais en-dessous de Windows 10 il n'y as pas WebView2 installer par défault. <br />
 Il faudra le packager dans l'installeur .msi pour que ce sois compatible à partir de Windows7 et +.
 
 Dossier src-tauri : <br />
@@ -143,7 +146,9 @@ npm run tauri build -- --target i686-pc-windows-msvc
 ```
 <br />
 
-### Build - Linux :
+### Build - Linux - .deb / .appimage :
+<span style="color: red;">IMPORTANT</span> : Veuillez noter que les paquets .deb ne peuvent être créés que sur Linux car la compilation croisée ne fonctionne pas encore.
+<br /><br />
 
 ARM64 Linux (kernel 4.1, glibc 2.17+) :
 ```bash
@@ -155,13 +160,16 @@ npm run tauri build -- --target aarch64-unknown-linux-gnu
 npm run tauri build -- --target i686-unknown-linux-gnu	
 ```
 
-64-bit Linux (kernel 3.2+, glibc 2.17+) :
+64-bit Linux (kernel 3.2+, glibc 2.17+)  :
 ```bash
 npm run tauri build -- --target x86_64-unknown-linux-gnu
 ```
 <br />
 
-### Build - macOS  :
+### Build - macOS (11.0 minimum pour tous) - .app / .dmg :
+
+<span style="color: red;">IMPORTANT</span> : Veuillez noter que les bundles .app et .dmg ne peuvent être créés que sur macOS car la compilation croisée ne fonctionne pas encore.
+<br /><br />
 
 ARM64 macOS (11.0+, Big Sur+) :
 produit un binaire macOS pour les machines Apple en silicium.
