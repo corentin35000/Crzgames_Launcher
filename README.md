@@ -92,8 +92,7 @@ rustup target list
 
 Targets disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.html
 
-
-<br /><br /><br />
+<br />
 
 ### Pour build un système qui est le même que notre machine il faudra utiliser :
 ```bash
@@ -109,7 +108,7 @@ Et les programmes d'installation seront situés dans :
 ```bash
 src-tauri/target/release/bundle/
 ```
-<br /><br />
+<br />
 
 ### Build - Windows :
 Informations : Windows 10/11 sont compatible nativement, mais en-dessous de Windows 10 il n'y as pas WebView2 installer par défault. <br />
