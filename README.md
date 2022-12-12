@@ -92,6 +92,10 @@ Targets disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.ht
 ```bash
 npm run tauri build
 ```
+
+Cette commande intègre vos ressources Web dans un seul binaire avec votre code Rust. <br />
+Le binaire lui-même sera situé dans src-tauri/target/release/[app name], et les programmes d'installation seront situés dans src-tauri/target/release/bundle/.
+
 <br /><br />
 
 ### Build - Windows :
