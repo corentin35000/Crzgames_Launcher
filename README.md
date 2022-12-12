@@ -150,6 +150,7 @@ Documentation : https://tauri.app/fr/v1/guides/building/app-size#rust-build-time
     opt-level = "s" # Optimiser la taille du binaire
     strip = true # Supprimer automatiquement les symboles du binaire.
   ```
+<br />
 
 
 ### Pour build un système qui est le même que notre machine il faudra utiliser :
