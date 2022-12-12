@@ -32,18 +32,19 @@ npm install
 
 
 ## Updating Dependencies
-
-Vous pouvez mettre à jour les dépendances NPM de Vue.js (à la racine du projet) :
+Install a global package, to update major/minor versions of available packages : 
 ```bash
+# npm
+npm install -g npm-check-updates 
+```
+
+Updating Dependencies Vue.js, exécutez ce qui suit à la racine :
+```bash
+ncu --upgrade
 npm install
 ```
 
-Vous pouvez mettre à jour les dépendances NPM de tauri (à la racine du projet) :
-```bash
-npm install @tauri-apps/cli@latest @tauri-apps/api@latest
-```
-
-Pour mettre à jour les dépendances Cargo, exécutez ce qui suit dans le dossier 'src-tauri' :
+Updating Dependencies Rust/Tauri, pour mettre à jour les dépendances Cargo, exécutez ce qui suit dans le dossier 'src-tauri' :
 ```bash
 cargo update
 ```
