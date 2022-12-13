@@ -45,7 +45,11 @@
         "minimumSystemVersion": "11"
       },
       "deb": {
-        "depends": []
+        "depends": [],
+        "files": {}
+      },
+      "appimage": {
+        "bundleMediaFramework": true
       }
     },
     "security": {
