@@ -5,7 +5,7 @@ on:
       - 'app-v0.1'
   workflow_dispatch:
 
-jobs:
+all_system:
   release:
     strategy:
       fail-fast: false
@@ -47,7 +47,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tagName: ${{ github.ref_name }} # This only works if your workflow triggers on new tags.
-          releaseName: 'Crz Launcher 0.1' # tauri-action replaces \_\_VERSION\_\_ with the app version.
+          releaseName: 'App Name v__VERSION__' # tauri-action replaces \_\_VERSION\_\_ with the app version.
           releaseBody: 'See the assets to download and install this version.'
           releaseDraft: true
           prerelease: false
