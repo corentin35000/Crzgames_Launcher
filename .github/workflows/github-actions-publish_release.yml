@@ -2,7 +2,7 @@ name: publish_release
 on:
   push:
     tags:
-      - 'v0.1'
+      - 'app-v0.1'
   workflow_dispatch:
 
 jobs:
