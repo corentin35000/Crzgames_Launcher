@@ -5,7 +5,7 @@ on:
       - 'v0.1'
   workflow_dispatch:
 
-all_system:
+jobs:
   release:
     strategy:
       fail-fast: false
