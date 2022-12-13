@@ -48,6 +48,6 @@ jobs:
         with:
           tagName: ${{ github.ref_name }} # This only works if your workflow triggers on new tags.
           releaseName: 'Crzgames Launcher v__VERSION__' # tauri-action replaces \_\_VERSION\_\_ with the app version.
-          releaseBody: 'See the assets to download and install this version.'
+          releaseBody: 'Distribution for Windows7+ / MacOS 11.0+ (ARM64 macOS (11.0+, Big Sur+) / 64-bit macOS (10.7+, Lion+) / Linux 32/64bits'
           releaseDraft: true
           prerelease: false
