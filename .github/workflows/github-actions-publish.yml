@@ -51,4 +51,3 @@ jobs:
           releaseBody: 'Distribution for Windows / MacOS / Linux'
           releaseDraft: false
           prerelease: false
-          targets: 'i686-pc-windows-msvc'
