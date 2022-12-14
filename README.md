@@ -131,7 +131,7 @@ rustup target add i686-pc-windows-msvc
 
 Supprimer une target spécifique :
 ```bash
-rustup toolchain remove i686-pc-windows-msvc
+rustup target remove i686-pc-windows-msvc
 ``` 
 
 Lister les targets déjà installer :
