@@ -142,7 +142,7 @@ Pour connaitre la chaine d'outils actuellement utilisé :
 rustup default 
 ``` 
 
-Pour changer la chaine d'outils par défault utilisé : 
+Pour changer la chaine d'outils par défault utilisé, exemple pour Windows-32bit : 
 ```bash
 rustup default stable-i686-pc-windows-msvc
 ``` 
