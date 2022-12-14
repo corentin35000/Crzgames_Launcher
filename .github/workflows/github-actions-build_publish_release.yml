@@ -1,12 +1,14 @@
-name: publish_release
+name: build_publish_release
 on:
   push:
+    branches:
+      - main
     tags:
       - 'v*'
   workflow_dispatch:
 
 jobs:
-  release:
+  build_release:
     strategy:
       fail-fast: false
       matrix:
@@ -40,7 +42,12 @@ jobs:
       - name: Install app dependencies and build web
         run: npm install
 
-      - name: Build the app
+      - name: Build the app Windows
+        if: matrix.platform == 'windows-latest'
+        run: rustup target add i686-pc-windows-msvc && rustup target add x86_64-pc-windows-msvc && npm run tauri build -- --target i686-pc-windows-msvc && npm run tauri build -- --target x86_64-pc-windows-msvc
+
+      - name: Build the app Linux / MacOS
+        if: matrix.platform != 'windows-latest'
         uses: tauri-apps/tauri-action@v0
 
         env:
