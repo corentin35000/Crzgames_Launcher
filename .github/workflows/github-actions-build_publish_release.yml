@@ -42,13 +42,7 @@ jobs:
       - name: Install app dependencies and build web
         run: npm install
 
-      - name: Build the app Windows
-        if: matrix.platform == 'windows-latest'
-        run: rustup target add i686-pc-windows-msvc && rustup target add x86_64-pc-windows-msvc && npm run tauri build -- --target i686-pc-windows-msvc && npm run tauri build -- --target x86_64-pc-windows-msvc
-        uses: tauri-apps/tauri-action@v0
-
-      - name: Build the app Linux / MacOS
-        if: matrix.platform != 'windows-latest'
+      - name: Build the app
         uses: tauri-apps/tauri-action@v0
 
         env:
