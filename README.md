@@ -129,6 +129,11 @@ Exemple pour ajouter/installer la chaine d'outils Windows 32bit :
 rustup target add i686-pc-windows-msvc
 ``` 
 
+Supprimer une target spécifique :
+```bash
+rustup target remove i686-pc-windows-msvc
+``` 
+
 Lister les targets déjà installer :
 ```bash
 rustup target list
