@@ -124,7 +124,7 @@ npm run dev
 ### Install for production - Windows / macOS / Linux :
 Par défaut, Rust installe uniquement les chaînes d'outils pour la cible de votre machine. <br />
 Vous devez donc d'abord installer la chaîne d'outils pour le system souhaiter. <br /><br />
-Exemple pour Windows 32 bits :
+Exemple pour ajouter la chaine d'outils Windows 32bit :
 ```bash
 rustup target add i686-pc-windows-msvc
 ``` 
@@ -135,6 +135,17 @@ rustup target list
 ``` 
 
 Targets disponible : https://doc.rust-lang.org/nightly/rustc/platform-support.html
+
+Il y a toujours une chaine d'outils qui est utilisé par défault, c'est celui qui est choisi lors de la compilation <br />
+Pour connaitre la chaine d'outils actuellement utilisé : 
+```bash
+rustup default 
+``` 
+
+Pour changer la chaine d'outils par défault utilisé : 
+```bash
+rustup default stable-i686-pc-windows-msvc
+``` 
 
 <br />
 
