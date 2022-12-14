@@ -1,4 +1,4 @@
-name: build_publish_release
+name: build_release
 on:
   push:
     branches:
