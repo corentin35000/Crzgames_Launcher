@@ -164,7 +164,7 @@ Documentation : https://tauri.app/fr/v1/guides/building/app-size#rust-build-time
 <br />
 
 
-### Pour build un système qui est le même que notre machine il faudra utiliser :
+### Pour build un système qui est le même que notre chaine d'outils Rust utilisé par défault, il faudra utiliser :
 ```bash
 npm run tauri build
 ```
