@@ -45,6 +45,9 @@ jobs:
       - name: Build the app Windows
         if: matrix.platform == 'windows-latest'
         run: npm run tauri build -- --target i686-pc-windows-msvc && npm run tauri build -- --target x86_64-pc-windows-msvc
+
+      - name: Upload Artifact Windows
+        if: matrix.platform == 'windows-latest'
         uses: actions/upload-artifact@v3
         with:
           name: my-artifact
