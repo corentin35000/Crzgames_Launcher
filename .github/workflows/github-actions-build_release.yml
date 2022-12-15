@@ -46,12 +46,13 @@ jobs:
         if: matrix.platform == 'windows-latest'
         run: rustup target add i686-pc-windows-msvc && rustup target add x86_64-pc-windows-msvc && npm run tauri build -- --target i686-pc-windows-msvc && npm run tauri build -- --target x86_64-pc-windows-msvc
 
-      - name: Upload Artifact Windows
+      - name: Add assets to Release for Windows
         if: matrix.platform == 'windows-latest'
-        uses: actions/upload-artifact@v3
+        uses: softprops/action-gh-release@v1
         with:
-          name: windows-x86_x64
-          path: src-tauri/target/
+          files:
+            src-tauri/target/x86_64-pc-windows-msvc/release/bundle/msi/
+            src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
 
       - name: Build the app Linux
         if: matrix.platform == 'ubuntu-20.04'
