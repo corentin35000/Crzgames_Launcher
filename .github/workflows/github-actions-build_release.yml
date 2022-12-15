@@ -46,9 +46,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tagName: ${{ github.ref_name }} # This only works if your workflow triggers on new tags.
-          releaseName: 'Crzgames Launcher v__VERSION__' # tauri-action replaces \_\_VERSION\_\_ with the app version.
-          releaseBody: 'Distribution for Windows / MacOS / Linux'
-          releaseDraft: false
+          tag_name: ${{ github.ref_name }} # This only works if your workflow triggers on new tags.
+          name: 'Crzgames Launcher v__VERSION__' # tauri-action replaces \_\_VERSION\_\_ with the app version.
+          body: 'Distribution for Windows / MacOS / Linux'
+          draft: false
           prerelease: false
           files: src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
