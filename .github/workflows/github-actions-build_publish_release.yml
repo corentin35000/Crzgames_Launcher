@@ -1,4 +1,4 @@
-name: build_release
+name: build_publish_release
 
 on:
   push:
@@ -60,7 +60,7 @@ jobs:
     steps:
       - name : Download Artifacts All
         uses: actions/download-artifact@v3
-        # si aucun name, il récupére tout les artefact uploader précédament par défault.
+        # si aucun name, il récupére tout les artefacts uploader précédemment par défault.
 
       - name: Add assets and publish Release
         uses: softprops/action-gh-release@v1
