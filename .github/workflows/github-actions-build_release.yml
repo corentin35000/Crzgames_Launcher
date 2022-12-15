@@ -42,7 +42,7 @@ jobs:
           if-no-files-found: warn # 'warn' or 'ignore' are also available, defaults to `warn`
 
       - name : Download Artifact Windows
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: windows-x86_x64
           path: windows-x86_x64
