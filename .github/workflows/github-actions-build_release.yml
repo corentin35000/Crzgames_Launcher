@@ -42,7 +42,20 @@ jobs:
       - name: Install app dependencies and build web
         run: npm install
 
-      - name: Build the app
+      - name: Build the app Windows
+        if: matrix.platform == 'windows-latest'
+        run: npm run tauri build -- --target i686-pc-windows-msvc && npm run tauri build -- --target x86_64-pc-windows-msvc
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: my_file.txt
+
+      - name: Build the app Linux
+        if: matrix.platform == 'ubuntu-20.04'
+        uses: tauri-apps/tauri-action@v0
+
+      - name: Build the app macOS
+        if: matrix.platform == 'macos-latest'
         uses: tauri-apps/tauri-action@v0
 
         env:
