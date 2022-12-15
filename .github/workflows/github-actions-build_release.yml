@@ -51,4 +51,4 @@ jobs:
           body: 'Distribution for Windows / MacOS / Linux'
           draft: false
           prerelease: false
-          files: src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
+          files: CrzInstaller_0.0.1_x86_en-US.msi
