@@ -44,14 +44,20 @@ jobs:
 
       - name: Build the app Windows
         if: matrix.platform == 'windows-latest'
-        run: rustup target add i686-pc-windows-msvc && rustup target add x86_64-pc-windows-msvc && npm run tauri build -- --target i686-pc-windows-msvc
+        run:
+          rustup target add i686-pc-windows-msvc
+          rustup target add x86_64-pc-windows-msvc
+          npm run tauri build -- --target i686-pc-windows-msvc
+          npm run tauri build -- --target x86_64-pc-windows-msvc
 
       - name: Upload Artifact Windows
         if: matrix.platform == 'windows-latest'
         uses: actions/upload-artifact@v3
         with:
           name: windows-x86_x64
-          path: src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
+          path:
+            src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
+            src-tauri/target/x86_64-pc-windows-msvc/release/bundle/msi/
           if-no-files-found: warn
 
   publish_release:
