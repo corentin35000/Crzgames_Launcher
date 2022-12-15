@@ -59,7 +59,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : Download artifact all
-        uses: actions/download-artifact@v3 # si aucun name, il récupére tout les artefact uploader précédament par défault.
+        uses: actions/download-artifact@v3
+        # si aucun name, il récupére tout les artefact uploader précédament par défault.
 
       - name: Add assets and publish Release
         uses: softprops/action-gh-release@v1
@@ -72,4 +73,4 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            windows-x86_x64
+            ./windows-x86_x64
