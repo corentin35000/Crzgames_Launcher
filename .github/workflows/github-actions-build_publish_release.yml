@@ -64,9 +64,13 @@ jobs:
     needs: [build_release]
     runs-on: ubuntu-latest
     steps:
-      - name : Download All Artifacts
+      - name: Download All Artifacts
         uses: actions/download-artifact@v3
         # si aucun name, il récupére tout les artefacts uploader précédemment par défault.
+
+      - name: List Files
+        run: |
+          ls windows-x86_x64
 
       - name: Add assets and publish Release
         uses: softprops/action-gh-release@v1
@@ -78,4 +82,5 @@ jobs:
           body: 'Distribution for Windows / MacOS / Linux'
           draft: false
           prerelease: false
-          files: windows-x86_x64/*
+          files: | 
+            windows-x86_x64/*
