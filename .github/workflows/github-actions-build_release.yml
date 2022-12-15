@@ -50,8 +50,8 @@ jobs:
         if: matrix.platform == 'windows-latest'
         uses: actions/upload-artifact@v3
         with:
-          name: my-artifact
-          path: my_file.txt
+          name: windows-x86_x64
+          path: src-tauri/target/
 
       - name: Build the app Linux
         if: matrix.platform == 'ubuntu-20.04'
