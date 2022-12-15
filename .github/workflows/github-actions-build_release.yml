@@ -9,21 +9,10 @@ on:
 
 jobs:
   build_release:
-    strategy:
-      fail-fast: false
-      matrix:
-        platform: [macos-latest, ubuntu-20.04, windows-latest]
-    runs-on: ${{ matrix.platform }}
+    runs-on: windows-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
-      - name: Install dependencies (ubuntu only)
-        if: matrix.platform == 'ubuntu-20.04'
-        # You can remove libayatana-appindicator3-dev if you don't use the system tray feature.
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev libayatana-appindicator3-dev librsvg2-dev
 
       - name: Rust setup
         uses: dtolnay/rust-toolchain@stable
@@ -43,36 +32,17 @@ jobs:
         run: npm install
 
       - name: Build the app Windows
-        if: matrix.platform == 'windows-latest'
-        run: rustup target add i686-pc-windows-msvc && rustup target add x86_64-pc-windows-msvc && npm run tauri build -- --target i686-pc-windows-msvc && npm run tauri build -- --target x86_64-pc-windows-msvc
+        run: rustup target add i686-pc-windows-msvc && rustup target add x86_64-pc-windows-msvc && npm run tauri build -- --target i686-pc-windows-msvc
 
       - name: Upload Artifact Windows
-        if: matrix.platform == 'windows-latest'
         uses: actions/upload-artifact@v3
         with:
           name: windows-x86_x64
-          path:
-            src-tauri/target/x86_64-pc-windows-msvc/release/bundle/msi/
-            src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
+          path: src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
           if-no-files-found: warn # 'warn' or 'ignore' are also available, defaults to `warn`
 
       - name: Add assets to Release for Windows
-        if: matrix.platform == 'windows-latest'
         uses: softprops/action-gh-release@v1
-        with:
-          tag_name: test
-          files:
-            src-tauri/target/x86_64-pc-windows-msvc/release/bundle/msi/
-            src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
-
-      - name: Build the app Linux
-        if: matrix.platform == 'ubuntu-20.04'
-        uses: tauri-apps/tauri-action@v0
-
-      - name: Build the app macOS
-        if: matrix.platform == 'macos-latest'
-        uses: tauri-apps/tauri-action@v0
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -81,3 +51,4 @@ jobs:
           releaseBody: 'Distribution for Windows / MacOS / Linux'
           releaseDraft: false
           prerelease: false
+          files: src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
