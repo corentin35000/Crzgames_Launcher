@@ -55,7 +55,7 @@ jobs:
           if-no-files-found: warn
 
   publish_release:
-    needs: [macos-latest, ubuntu-20.04, windows-latest]
+    needs: [${{ matrix.platform }}]
     runs-on: ubuntu-latest
     steps:
       - name : Download artifact all
