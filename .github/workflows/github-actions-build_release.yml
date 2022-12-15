@@ -41,6 +41,12 @@ jobs:
           path: src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
           if-no-files-found: warn # 'warn' or 'ignore' are also available, defaults to `warn`
 
+      - name : Download Artifact Windows
+      - uses: actions/download-artifact@v2
+        with:
+          name: windows-x86_x64
+          path: windows-x86_x64
+
       - name: Add assets to Release for Windows
         uses: softprops/action-gh-release@v1
         env:
@@ -51,4 +57,4 @@ jobs:
           body: 'Distribution for Windows / MacOS / Linux'
           draft: false
           prerelease: false
-          files: CrzInstaller_0.0.1_x86_en-US.msi
+          files: windows-x86_x64
