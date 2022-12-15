@@ -83,4 +83,4 @@ jobs:
           draft: false
           prerelease: false
           files: | 
-            windows-x86_x64/*
+            windows-x86_x64
