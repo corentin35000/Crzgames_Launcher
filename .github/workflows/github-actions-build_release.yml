@@ -50,6 +50,7 @@ jobs:
         if: matrix.platform == 'windows-latest'
         uses: softprops/action-gh-release@v1
         with:
+          tag_name: ${{ github.ref_name }}
           files:
             src-tauri/target/x86_64-pc-windows-msvc/release/bundle/msi/
             src-tauri/target/i686-pc-windows-msvc/release/bundle/msi/
