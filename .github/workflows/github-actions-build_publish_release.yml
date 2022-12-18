@@ -74,8 +74,8 @@ jobs:
         with:
           name: macos-silicium_intel
           path: |
-            src-tauri/target/aarch64-apple-darwin/release/bundle/app/
-            src-tauri/target/x86_64-apple-darwin/release/bundle/app/
+            src-tauri/target/aarch64-apple-darwin/release/bundle/macos/
+            src-tauri/target/x86_64-apple-darwin/release/bundle/macos/
             src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/
             src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/
           if-no-files-found: warn
@@ -105,7 +105,7 @@ jobs:
           files: |
             windows-x86_x64/i686-pc-windows-msvc/release/bundle/msi/*
             windows-x86_x64/x86_64-pc-windows-msvc/release/bundle/msi/*
-            macos-silicium_intel/aarch64-apple-darwin/release/bundle/app/*
-            macos-silicium_intel/x86_64-apple-darwin/release/bundle/app/*
+            macos-silicium_intel/aarch64-apple-darwin/release/bundle/macos/*
+            macos-silicium_intel/x86_64-apple-darwin/release/bundle/macos/*
             macos-silicium_intel/aarch64-apple-darwin/release/bundle/dmg/*
             macos-silicium_intel/x86_64-apple-darwin/release/bundle/dmg/*
