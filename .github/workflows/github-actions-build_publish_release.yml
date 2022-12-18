@@ -60,6 +60,26 @@ jobs:
             src-tauri/target/x86_64-pc-windows-msvc/release/bundle/msi/
           if-no-files-found: warn
 
+      - name: Build the app macOS
+        if: matrix.platform == 'macos-latest'
+        run: |
+          rustup target add aarch64-apple-darwin
+          rustup target add x86_64-apple-darwin
+          npm run tauri build -- --target aarch64-apple-darwin
+          npm run tauri build -- --target x86_64-apple-darwin
+
+      - name: Upload Artifact macOS
+        if: matrix.platform == 'macos-latest'
+        uses: actions/upload-artifact@v3
+        with:
+          name: macos-silicium_intel
+          path: |
+            src-tauri/target/aarch64-apple-darwin/release/bundle/app/
+            src-tauri/target/x86_64-apple-darwin/release/bundle/app/
+            src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/
+            src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/
+          if-no-files-found: warn
+
   publish_release:
     needs: [build_release]
     runs-on: ubuntu-latest
@@ -78,10 +98,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref_name }} # This only works if your workflow triggers on new tags.
-          name: 'Crzgames Launcher v__VERSION__' # tauri-action replaces \_\_VERSION\_\_ with the app version.
-          body: 'Distribution for Windows / MacOS / Linux'
+          name: 'v*'
+          body: 'Crzgames Launcher - Distribution for Windows / MacOS / Linux'
           draft: false
           prerelease: false
           files: |
             windows-x86_x64/i686-pc-windows-msvc/release/bundle/msi/*
             windows-x86_x64/x86_64-pc-windows-msvc/release/bundle/msi/*
+            macos-silicium_intel/aarch64-apple-darwin/release/bundle/app/*
+            macos-silicium_intel/x86_64-apple-darwin/release/bundle/app/*
+            macos-silicium_intel/aarch64-apple-darwin/release/bundle/dmg/*
+            macos-silicium_intel/x86_64-apple-darwin/release/bundle/dmg/*g
