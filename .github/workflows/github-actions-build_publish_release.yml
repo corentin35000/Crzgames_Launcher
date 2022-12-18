@@ -108,4 +108,4 @@ jobs:
             macos-silicium_intel/aarch64-apple-darwin/release/bundle/app/*
             macos-silicium_intel/x86_64-apple-darwin/release/bundle/app/*
             macos-silicium_intel/aarch64-apple-darwin/release/bundle/dmg/*
-            macos-silicium_intel/x86_64-apple-darwin/release/bundle/dmg/*g
+            macos-silicium_intel/x86_64-apple-darwin/release/bundle/dmg/*
