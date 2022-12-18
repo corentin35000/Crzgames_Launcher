@@ -73,7 +73,7 @@ jobs:
           ls windows-x86_x64
           cd windows-x86_x64
           cd x86_64-pc-windows-msvc
-          ls x86_64-pc-windows-msvcg
+          ls x86_64-pc-windows-msvc
 
       - name: Add assets and publish Release
         uses: softprops/action-gh-release@v1
