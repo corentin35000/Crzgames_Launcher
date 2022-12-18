@@ -71,9 +71,6 @@ jobs:
       - name: List Files
         run: |
           ls windows-x86_x64
-          cd windows-x86_x64
-          cd x86_64-pc-windows-msvc
-          ls x86_64-pc-windows-msvc
 
       - name: Add assets and publish Release
         uses: softprops/action-gh-release@v1
@@ -85,6 +82,6 @@ jobs:
           body: 'Distribution for Windows / MacOS / Linux'
           draft: false
           prerelease: false
-          files: | 
-            windows-x86_x64/i686-pc-windows-msvc/*
-            windows-x86_x64/x86_64-pc-windows-msvc/*
+          files: |
+            windows-x86_x64/i686-pc-windows-msvc/release/bundle/msi/*
+            windows-x86_x64/x86_64-pc-windows-msvc/release/bundle/msi/*
