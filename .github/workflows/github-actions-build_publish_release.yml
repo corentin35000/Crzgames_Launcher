@@ -80,7 +80,7 @@ jobs:
         with:
           name: macos-silicium_intel
           path: |
-            CrzInstaller_aarch64-apple-darwin_app.zip
+            ${{ github.workspace }}/CrzInstaller_aarch64-apple-darwin_app.zip
             src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/
             src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/
           if-no-files-found: warn
