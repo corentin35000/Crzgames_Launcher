@@ -1,5 +1,5 @@
 [package]
-name = "Crzgames_launcher"
+name = "crzgames_launcher"
 version = "0.0.0"
 description = "Laucher for games"
 authors = ["corentin recanzone"]
