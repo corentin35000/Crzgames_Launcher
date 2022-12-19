@@ -74,6 +74,9 @@ jobs:
         with:
           files: src-tauri/target/aarch64-apple-darwin/release/bundle/macos/
           dest: CrzInstaller_aarch64-apple-darwin_app.zip
+          with:
+            files: src-tauri/target/x86_64-apple-darwin/release/bundle/macos/
+            dest: CrzInstaller_x86_64-apple-darwin_app.zip
 
       - name: Upload Artifact macOS
         if: matrix.platform == 'macos-latest'
@@ -82,6 +85,7 @@ jobs:
           name: macos-silicium_intel
           path: |
             ${{ github.workspace }}/CrzInstaller_aarch64-apple-darwin_app.zip
+            ${{ github.workspace }}/CrzInstaller_x86_64-apple-darwin_app.zip
             src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/
             src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/
           if-no-files-found: warn
@@ -133,7 +137,7 @@ jobs:
           files: |
             windows-x86_x64/i686-pc-windows-msvc/release/bundle/msi/*
             windows-x86_x64/x86_64-pc-windows-msvc/release/bundle/msi/*
-            macos-silicium_intel/aarch64-apple-darwin/release/bundle/macos/*
-            macos-silicium_intel/x86_64-apple-darwin/release/bundle/macos/*
+            macos-silicium_intel/CrzInstaller_aarch64-apple-darwin_app.zip
+            macos-silicium_intel/CrzInstaller_x86_64-apple-darwin_app.zip
             macos-silicium_intel/aarch64-apple-darwin/release/bundle/dmg/*
             macos-silicium_intel/x86_64-apple-darwin/release/bundle/dmg/*
