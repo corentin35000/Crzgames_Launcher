@@ -121,5 +121,5 @@ jobs:
             windows-x86_x64/x86_64-pc-windows-msvc/release/bundle/msi/*
             macos-silicium_intel/CrzInstaller_aarch64_app.zip
             macos-silicium_intel/CrzInstaller_x64_app.zip
-            macos-silicium_intel/aarch64-apple-darwin/release/bundle/dmg/*
-            macos-silicium_intel/x86_64-apple-darwin/release/bundle/dmg/*
+            macos-silicium_intel/src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/*
+            macos-silicium_intel/src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/*
