@@ -94,28 +94,6 @@ jobs:
             src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/
           if-no-files-found: warn
 
-      - name: Build the app Linux
-        if: matrix.platform == 'ubuntu-20.04'
-        run: |
-          rustup target add aarch64-unknown-linux-gnu
-          rustup target add i686-unknown-linux-gnu
-          rustup target add x86_64-unknown-linux-gnu
-          npm run tauri build -- --target aarch64-unknown-linux-gnu
-          npm run tauri build -- --target i686-unknown-linux-gnu	
-          npm run tauri build -- --target x86_64-unknown-linux-gnu      
-
-      - name: Upload Artifact Linux
-        if: matrix.platform == 'ubuntu-20.04'
-        uses: actions/upload-artifact@v3
-        with:
-          name: linux-ARM64_32-64bit
-          path: |
-            src-tauri/target/aarch64-apple-darwin/release/bundle/macos/
-            src-tauri/target/x86_64-apple-darwin/release/bundle/macos/
-            src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/
-            src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/
-          if-no-files-found: warn
-
   publish_release:
     needs: [build_release]
     runs-on: ubuntu-latest
