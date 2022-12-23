@@ -92,7 +92,7 @@ npm install
 
 Updating Rust :
 ```bash
-rustup update
+rustup update stable
 ```
 
 <br />
