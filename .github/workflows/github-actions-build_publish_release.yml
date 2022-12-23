@@ -32,6 +32,14 @@ jobs:
         uses: swatinem/rust-cache@v2
         with:
           workspaces: './src-tauri -> target'
+          
+      - name: Update Rust
+        run: rustup update stable
+      
+      - name: Update dependencies to Cargo
+        run: |
+          cd src-tauri
+          cargo update
 
       - name: Sync node version and setup cache
         uses: actions/setup-node@v3
