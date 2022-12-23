@@ -49,6 +49,13 @@ jobs:
 
       - name: Install app dependencies
         run: npm install
+        
+      - name: Updating Dependencies to NPM
+        run: |
+          npm install -g npm-check-updates 
+          ncu --upgrade
+          npm install
+
 
       - name: Build the app Windows
         if: matrix.platform == 'windows-latest'
