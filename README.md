@@ -107,21 +107,21 @@ cargo update
 <br /><br />
 
 ## Development Server
-Start the development server on http://127.0.0.1:1420/
-
 Cette commande vérifie rapidement votre code pour s'assurer qu'il se compile mais ne produit pas d'exécutable et ne lance pas l'application (seulement pour s'assurer que le projet Rust compile). <br /> A faire dans le dossier 'src-tauri' :
 ```bash
 #cargo
 cargo check
 ```
+<br />
+Start the development server on http://127.0.0.1:1420/
 
-Server type : Desktop (.exe)
+Application type : Desktop (.exe)
 ```bash
 #npm
 npm run tauri dev
 ```
 
-Server type : WebApp
+Application type : WebApp
 ```bash
 #npm
 npm run dev
