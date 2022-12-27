@@ -91,7 +91,6 @@ ncu -u && npm install
 
 Updating Rust :
 ```bash
-#rustup
 rustup update stable
 ```
 
@@ -120,7 +119,7 @@ npm run tauri dev
 ```
 
 Application type : WebApp <br />
-Start the development server on http://127.0.0.1:1420/
+Start the development server on http://localhost:1420/
 ```bash
 #npm
 npm run dev
