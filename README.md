@@ -92,6 +92,7 @@ npm install
 
 Updating Rust :
 ```bash
+#rustup
 rustup update stable
 ```
 
@@ -99,6 +100,7 @@ rustup update stable
 
 Updating Dependencies Rust/Tauri, pour mettre à jour les dépendances Cargo, exécutez ce qui suit dans le dossier 'src-tauri' :
 ```bash
+#cargo
 cargo update
 ```
 
@@ -107,13 +109,21 @@ cargo update
 ## Development Server
 Start the development server on http://127.0.0.1:1420/
 
+Cette commande vérifie rapidement votre code pour s'assurer qu'il se compile mais ne produit pas d'exécutable et ne lance pas l'application (seulement pour s'assurer que le projet Rust compile). <br /> A faire dans le dossier 'src-tauri' :
+```bash
+#cargo
+cargo check
+```
+
 Server type : Desktop (.exe)
 ```bash
+#npm
 npm run tauri dev
 ```
 
 Server type : WebApp
 ```bash
+#npm
 npm run dev
 ```
 
@@ -169,7 +179,7 @@ Documentation : https://tauri.app/fr/v1/guides/building/app-size#rust-build-time
 <br />
 
 
-### Pour build un système qui est le même que notre chaine d'outils Rust utilisé par défault, il faudra utiliser :
+### Pour build un système qui est le même que notre pc utilisé pour compiler, il faudra utiliser :
 ```bash
 npm run tauri build
 ```

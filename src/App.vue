@@ -13,6 +13,8 @@
   import Header from './components/BaliseSemantique/Header.vue';
   import Footer from './components/BaliseSemantique/Footer.vue';
   import WindowBar from "./components/WindowBar.vue";
+
+
 </script>
 
 <style lang="scss" scoped>
