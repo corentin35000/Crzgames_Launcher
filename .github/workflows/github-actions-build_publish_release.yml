@@ -132,16 +132,16 @@ jobs:
         uses: actions/download-artifact@v3
         # si aucun name, il récupére tout les artefacts uploader précédemment par défault.
 
+      - name: Chmod to AppImage (Debian)
+        run: |
+          cd linux-ARM64_32-64bit/appimage/
+          chmod a+x *.AppImage
+
       - name: List Files
         run: |
           ls windows-x86_x64
           ls macos-silicium_intel
           ls linux-ARM64_32-64bit
-          
-      - name: Chmod to AppImage (Debian)
-        run: |
-          cd linux-ARM64_32-64bit/appimage/
-          chmod a+x *.AppImage
 
       - name: Add assets and publish Release
         uses: softprops/action-gh-release@v1
