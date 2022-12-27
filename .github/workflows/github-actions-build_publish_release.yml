@@ -112,11 +112,7 @@ jobs:
           rustup target add aarch64-unknown-linux-gnu
           rustup target add i686-unknown-linux-gnu
           rustup target add x86_64-unknown-linux-gnu
-          npm run tauri build -- --target i686-unknown-linux-gnu
           npm run tauri build -- --target x86_64-unknown-linux-gnu
-          npm run tauri build -- --target aarch64-unknown-linux-gnu	
-        env: 
-          PKG_CONFIG_SYSROOT_DIR: /
           
       - name: Upload Artifact Linux
         if: matrix.platform == 'ubuntu-20.04'
@@ -124,11 +120,7 @@ jobs:
         with:
           name: linux-ARM64_32-64bit
           path: |
-            src-tauri/target/aarch64-unknown-linux-gnu/release/bundle/appimage/
-            src-tauri/target/i686-unknown-linux-gnu/release/bundle/appimage/
             src-tauri/target/x86_64-unknown-linux-gnu/release/bundle/appimage/
-            src-tauri/target/aarch64-unknown-linux-gnu/release/bundle/deb/
-            src-tauri/target/i686-unknown-linux-gnu/release/bundle/deb/
             src-tauri/target/x86_64-unknown-linux-gnu/release/bundle/deb/
           if-no-files-found: warn
 
@@ -161,3 +153,5 @@ jobs:
             macos-silicium_intel/CrzInstaller_x64_app.zip
             macos-silicium_intel/src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/*.dmg
             macos-silicium_intel/src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/*.dmg
+            linux-ARM64_32-64bit/x86_64-unknown-linux-gnu/release/bundle/appimage/*
+            linux-ARM64_32-64bit/x86_64-unknown-linux-gnu/release/bundle/deb/*
