@@ -155,5 +155,5 @@ jobs:
             macos-silicium_intel/CrzInstaller_x64_app.zip
             macos-silicium_intel/src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/*.dmg
             macos-silicium_intel/src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/*.dmg
-            linux-ARM64_32-64bit/x86_64-unknown-linux-gnu/release/bundle/appimage/*
-            linux-ARM64_32-64bit/x86_64-unknown-linux-gnu/release/bundle/deb/*
+            linux-ARM64_32-64bit/appimage/*.AppImage
+            linux-ARM64_32-64bit/deb/*.deb
