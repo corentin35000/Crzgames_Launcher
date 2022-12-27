@@ -61,6 +61,8 @@ It shows a concise list of information about the environment, Rust, Node.js and 
 npm run tauri info
 ```
 
+<br /><br />
+
 ## Setup for Vue.js 
 
 ```bash
