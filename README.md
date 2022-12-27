@@ -84,8 +84,7 @@ ncu
 
 Updating Dependencies Vue.js/Tauri, pour mettre à jour les dépendances npm, exécutez ce qui suit à la racine :
 ```bash
-ncu --upgrade
-npm install
+ncu -u && npm install
 ```
 
 <br />
