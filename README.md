@@ -51,7 +51,15 @@ sudo apt install libwebkit2gtk-4.0-dev \
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 ```
 
-<br />
+<br /><br />
+
+## Infos for dependances / environment
+
+It shows a concise list of information about the environment, Rust, Node.js and their versions as well as some relevant configurations.
+
+```bash
+npm run tauri info
+```
 
 ## Setup for Vue.js 
 
@@ -273,13 +281,3 @@ npm run tauri build -- --target universal-apple-darwin
 ```
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
-
-<br /><br />
-
-## Infos for dependances / environment
-
-It shows a concise list of information about the environment, Rust, Node.js and their versions as well as some relevant configurations.
-
-```bash
-npm run tauri info
-```
