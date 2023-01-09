@@ -130,7 +130,7 @@ jobs:
     steps:
       - name: Download All Artifacts
         uses: actions/download-artifact@v3
-        # si aucun name, il récupére tout les artefacts uploader précédemment par défault.
+        # si aucun name, il récupére tout les artifacts uploader précédemment par défault.
 
       - name: Chmod to AppImage (Debian)
         run: |

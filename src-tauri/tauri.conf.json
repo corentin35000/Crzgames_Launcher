@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "CrzInstaller",
+    "productName": "Crz Games Launcher",
     "version": "0.0.1"
   },
   "tauri": {
@@ -56,7 +56,12 @@
       "csp": null
     },
     "updater": {
-      "active": false
+      "active": true,
+      "endpoints": [
+        "https://crzgames.com/releases/{{target}}/{{current_version}}"
+      ],
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDEzMkY2MkREMTNFRTgxNEQKUldSTmdlNFQzV0l2RTgzdGNCbFBramJtSUFGa0ZLamwrUHBXeTltU3VmanRUWFdhRnVqVSs1VkEK"
     },
     "windows": [
       {

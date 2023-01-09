@@ -283,3 +283,12 @@ npm run tauri build -- --target universal-apple-darwin
 ```
 
 Checkout the [deployment documentation](https://tauri.app/v1/guides/building/) for more information.
+<br /><br /><br />
+
+
+### Updater - Key :
+TAURI_PUBLIC_KEY=dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDEzMkY2MkREMTNFRTgxNEQKUldSTmdlNFQzV0l2RTgzdGNCbFBramJtSUFGa0ZLamwrUHBXeTltU3VmanRUWFdhRnVqVSs1VkEK
+
+TAURI_PRIVATE_KEY=dW50cnVzdGVkIGNvbW1lbnQ6IHJzaWduIGVuY3J5cHRlZCBzZWNyZXQga2V5ClJXUlRZMEl5b0xsbzRNVE5OOS9HTUhjd0t1VnBRRDNPMjVPTXR2RW1tcWZnNFloMWE5WUFBQkFBQUFBQUFBQUFBQUlBQUFBQVVnbldZUlFzSFprNG5TSC92Wk05YnBXbml6RUt0dnVEeTVHRWF5OFUwV0RwbUdGenlJUE8xTUorZG8wV2RzRk4rdzM0enhXL2t6TTJzMDZPUDJWMHdTMmwxUmsrM3RHSFcwNmJ3UG9tZlRpaDQ3WnpvdDBvcXNsOHJhajZWcWU0dlZ1VFMwajg4emM9Cg==
+
+TAURI_KEY_PASSWORD=Marylene59!
