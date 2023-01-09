@@ -101,7 +101,7 @@ ncu -u && npm install
 
 Updating Rust :
 ```bash
-rustup update stable
+rustup update
 ```
 
 <br />
