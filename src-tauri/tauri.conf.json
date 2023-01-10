@@ -18,6 +18,7 @@
       "active": true,
       "category": "Games",
       "copyright": "DEV-ALL",
+      "resources": [],
       "externalBin": [],
       "icon": [
         "icons/32x32.png",
@@ -28,9 +29,8 @@
         "icon.png"
       ],
       "identifier": "com.crzgames",
-      "longDescription": "",
-      "resources": [],
-      "shortDescription": "",
+      "longDescription": "CRZ Games Launcher for Games",
+      "shortDescription": "Launcher for Games",
       "targets": "all",
       "windows": {
         "webviewInstallMode": {
@@ -62,7 +62,7 @@
     "updater": {
       "active": true,
       "endpoints": [
-        "https://crzgames.com/releases/{{target}}/{{current_version}}"
+        "https://crzgames.com/update/{{target}}/{{current_version}}"
       ],
       "dialog": true,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDEzMkY2MkREMTNFRTgxNEQKUldSTmdlNFQzV0l2RTgzdGNCbFBramJtSUFGa0ZLamwrUHBXeTltU3VmanRUWFdhRnVqVSs1VkEK"

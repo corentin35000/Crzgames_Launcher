@@ -1,26 +1,26 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "notes": "Release notes",
   "platforms": {
     "darwin-x86_64": {
       "signature": "",
-      "url": "https://crzgames.com/releases/download/v1.0.0/macos/intel/app.app.tar.gz"
+      "url": "https://crzgames.com/releases/download/0.0.2/macos/intel/app.app.tar.gz"
     },
     "darwin-aarch64": {
       "signature": "",
-      "url": "https://crzgames.com/releases/download/v1.0.0/macos/silicon/app.app.tar.gz"
+      "url": "https://crzgames.com/releases/download/0.0.2/macos/silicon/app.app.tar.gz"
     },
     "linux-x86_64": {
       "signature": "",
-      "url": "https://crzgames.com/releases/download/v1.0.0/linux/x64/app.AppImage.tar.gz"
+      "url": "https://crzgames.com/releases/download/0.0.2/linux/x64/app.AppImage.tar.gz"
     },
     "windows-x86_64": {
       "signature": "",
-      "url": "https://crzgames.com/releases/download/v1.0.0/windows/x64/app.x64.msi.zip"
+      "url": "https://crzgames.com/releases/download/0.0.2/windows/x64/app.x64.msi.zip"
     },
     "windows-i686": {
       "signature": "",
-      "url": "https://crzgames.com/releases/download/v1.0.0/windows/x86/app.x64.msi.zip"
+      "url": "https://crzgames.com/releases/download/0.0.2/windows/x86/app.x64.msi.zip"
     }
   }
 }
