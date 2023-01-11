@@ -61,7 +61,10 @@ jobs:
           rustup target add x86_64-pc-windows-msvc
           npm run tauri build -- --target i686-pc-windows-msvc
           npm run tauri build -- --target x86_64-pc-windows-msvc
-
+        env: 
+          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
+          TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
+          
       - name: Upload Artifact Windows
         if: matrix.platform == 'windows-latest'
         uses: actions/upload-artifact@v3
@@ -79,6 +82,9 @@ jobs:
           rustup target add x86_64-apple-darwin
           npm run tauri build -- --target aarch64-apple-darwin
           npm run tauri build -- --target x86_64-apple-darwin
+        env: 
+          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
+          TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
 
       - name: Compress dir to .zip macOS (aarch64)
         if: matrix.platform == 'macos-latest'
@@ -113,6 +119,9 @@ jobs:
           rustup target add i686-unknown-linux-gnu
           rustup target add x86_64-unknown-linux-gnu
           npm run tauri build -- --target x86_64-unknown-linux-gnu
+        env: 
+          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
+          TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
 
       - name: Upload Artifact Linux
         if: matrix.platform == 'ubuntu-20.04'
